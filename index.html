@@ -38,10 +38,11 @@
 		const valores = window.location.search;
 
 		//Mostramos los valores en consola:
-		console.log(valores);
-
+		//console.log(valores);
 		var elementoB = document.getElementById("para");
-		let texto1=valores.replace('?','');
+		var texto2=valores.replace(/%20/g,' ')
+		//console.log(texto2);
+		var texto1=texto2.replace('?','');
 		// Agregar texto al elemento <b>
 		elementoB.innerText = texto1+"a"	;
 	//Resultado:
